@@ -1,0 +1,43 @@
+.todo-header {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 12%);
+
+  display: flex;
+}
+
+.todo-header input {
+  flex: 1 1 0%;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  color: hsl(360, 100%, 100%);
+  font-size: 1rem;
+
+  &::placeholder {
+    color: hsl(0, 0%, 40%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.todo-header button {
+  padding: 0.8rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  color: hsl(0, 0%, 90%);
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: background .4s ease-in;
+
+  background: oklch(53.18% 0.28 296.97);
+
+  &:hover {
+    background: oklch(47.66% 0.246 305.88);
+  }
+}
